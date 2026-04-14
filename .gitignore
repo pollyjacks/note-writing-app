@@ -1,4 +1,7 @@
 .env
 outputs/
+eyecatches/
+knowledge/
 __pycache__/
 *.pyc
+.streamlit/secrets.toml
