@@ -71,9 +71,29 @@ def apply_minimal_theme():
         background: var(--surface);
         border-right: 1px solid var(--border);
     }
-    section[data-testid="stSidebar"] .stRadio label,
+    /* サイドバー内のすべてのテキストを濃い色に強制 */
+    section[data-testid="stSidebar"],
+    section[data-testid="stSidebar"] *,
+    section[data-testid="stSidebar"] a,
+    section[data-testid="stSidebar"] span,
+    section[data-testid="stSidebar"] p,
+    section[data-testid="stSidebar"] li,
+    section[data-testid="stSidebar"] div {
+        color: var(--text) !important;
+    }
+    /* ナビゲーションのアクティブ項目 */
     section[data-testid="stSidebar"] [data-testid="stSidebarNav"] a {
         font-weight: 500;
+        color: var(--text) !important;
+    }
+    section[data-testid="stSidebar"] [data-testid="stSidebarNav"] a:hover {
+        background: var(--accent-soft);
+    }
+    /* ページタイトル */
+    section[data-testid="stSidebar"] h1,
+    section[data-testid="stSidebar"] h2,
+    section[data-testid="stSidebar"] h3 {
+        color: var(--text) !important;
     }
 
     /* ── カスタムバッジ */
