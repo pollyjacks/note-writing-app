@@ -9,7 +9,6 @@ from lib.theme import apply_minimal_theme
 from lib.notion import fetch_ideas, add_idea
 from lib.state import init_write_state, reset_write_state
 
-st.set_page_config(page_title="アイデア | Note執筆アシスタント", page_icon="💡", layout="wide")
 apply_minimal_theme()
 
 st.title("💡 アイデア・ネタ管理")

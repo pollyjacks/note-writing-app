@@ -10,7 +10,6 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 from lib.theme import apply_minimal_theme
 from lib.notion import fetch_published
 
-st.set_page_config(page_title="KPI | Note執筆アシスタント", page_icon="📊", layout="wide")
 apply_minimal_theme()
 
 KPI_FILE = Path(__file__).parent.parent / "outputs" / "kpi_history.json"

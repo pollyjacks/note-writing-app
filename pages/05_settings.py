@@ -7,7 +7,6 @@ import streamlit as st
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from lib.theme import apply_minimal_theme
 
-st.set_page_config(page_title="設定 | Note執筆アシスタント", page_icon="⚙️", layout="wide")
 apply_minimal_theme()
 
 PROMPTS_DIR = Path(__file__).parent.parent / "prompts"
