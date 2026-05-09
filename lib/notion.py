@@ -56,7 +56,7 @@ def sync_to_notion(title: str, url: str, memo: str) -> tuple[bool, str, str]:
         return False, "NOTION_DB_ID が未設定です", ""
 
     try:
-        status = "投稿済み" if url else "アイデア"
+        status = "投稿済" if url else "アイデア"
         props: dict = {
             "タイトル": {"title": [{"text": {"content": title}}]},
             "ステータス": {"select": {"name": status}},
@@ -84,7 +84,7 @@ def update_notion_url(page_id: str, url: str) -> tuple[bool, str]:
             page_id=page_id,
             properties={
                 "URL": {"url": url},
-                "ステータス": {"select": {"name": "投稿済み"}},
+                "ステータス": {"select": {"name": "投稿済"}},
             },
         )
         return True, "Notion更新しました"
@@ -127,14 +127,14 @@ def fetch_ideas() -> tuple[list, str]:
 
 
 def fetch_published() -> tuple[list, str]:
-    """ステータスが「投稿済み」のページ一覧を取得（KPI集計用）"""
+    """ステータスが「投稿済」のページ一覧を取得（KPI集計用）"""
     notion, err = get_notion_client()
     if err:
         return [], err
     try:
         result = notion.data_sources.query(
             data_source_id=get_data_source_id(),
-            filter={"property": "ステータス", "select": {"equals": "投稿済み"}},
+            filter={"property": "ステータス", "select": {"equals": "投稿済"}},
             page_size=100,
         )
         published = []
@@ -153,7 +153,7 @@ def fetch_published() -> tuple[list, str]:
             })
         return published, ""
     except Exception as e:
-        return [], f"投稿済み取得エラー: {e}"
+        return [], f"投稿済取得エラー: {e}"
 
 
 def add_idea(title: str, memo: str = "", reference_url: str = "") -> tuple[bool, str]:
