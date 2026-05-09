@@ -59,6 +59,12 @@ with tab_input:
         st.caption(f"{len(filtered)} 件 / 全 {len(records)} 件")
 
         SCORE_LABEL = {3: "◎ 直接使える", 2: "○ 使える", 1: "△ 参考程度"}
+        SCORE_COLOR = {3: "#e53935", 2: "#1e88e5", 1: "#43a047"}  # ◎赤 ○青 △緑
+
+        def score_badge(score):
+            label = SCORE_LABEL.get(score, "-")
+            color = SCORE_COLOR.get(score, "#888")
+            return f'<span style="color:{color};font-size:0.78em;font-weight:600">{label}</span>'
 
         for r in filtered:
             scores = r.get("scores", {})
@@ -68,11 +74,14 @@ with tab_input:
                     st.caption(f"🔗 [{r['url']}]({r['url']})")
                 c1, c2, c3 = st.columns(3)
                 with c1:
-                    st.metric("Noteプロジェクト", SCORE_LABEL.get(scores.get("note_project", 0), "-"))
+                    st.markdown("Noteプロジェクト", unsafe_allow_html=False)
+                    st.markdown(score_badge(scores.get("note_project", 0)), unsafe_allow_html=True)
                 with c2:
-                    st.metric("キャリア・仕事", SCORE_LABEL.get(scores.get("career", 0), "-"))
+                    st.markdown("キャリア・仕事", unsafe_allow_html=False)
+                    st.markdown(score_badge(scores.get("career", 0)), unsafe_allow_html=True)
                 with c3:
-                    st.metric("発信アイデア", SCORE_LABEL.get(scores.get("idea", 0), "-"))
+                    st.markdown("発信アイデア", unsafe_allow_html=False)
+                    st.markdown(score_badge(scores.get("idea", 0)), unsafe_allow_html=True)
                 if r.get("memo"):
                     st.markdown(f"> {r['memo']}")
                 st.caption(f"分析日: {r.get('analyzed_at', '')}　カテゴリ: {r.get('category', '')}")
