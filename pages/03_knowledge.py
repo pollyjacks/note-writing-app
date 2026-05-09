@@ -1,4 +1,5 @@
 """ナレッジ管理（Gemini Gem経由のナレッジ蓄積）"""
+import json
 import sys
 from pathlib import Path
 
@@ -12,10 +13,69 @@ apply_minimal_theme()
 KNOWLEDGE_DIR = Path(__file__).parent.parent / "knowledge"
 KNOWLEDGE_DIR.mkdir(exist_ok=True)
 
+INPUT_ANALYZED_PATH = Path(__file__).parent.parent / "data" / "input_analyzed.json"
+
 st.title("📚 ナレッジ蓄積")
 st.caption("X投稿・記事URL・本などからGemini Gemで構造化したナレッジを保存します。")
 
-tab_list, tab_add = st.tabs(["📋 一覧", "➕ 新規追加"])
+tab_list, tab_input, tab_add = st.tabs(["📋 一覧", "🔍 Notionインプット分析", "➕ 新規追加"])
+
+with tab_input:
+    st.markdown("### Notionインプット分析結果")
+    st.caption("/input-analyze を実行すると、インプットDBの未処理レコードを分析してここに蓄積されます。")
+
+    if not INPUT_ANALYZED_PATH.exists() or INPUT_ANALYZED_PATH.read_text().strip() in ("", "[]"):
+        st.info("まだ分析結果がありません。Claude Code で `/input-analyze` を実行してください。")
+    else:
+        records = json.loads(INPUT_ANALYZED_PATH.read_text(encoding="utf-8"))
+
+        # フィルタ
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            filter_note = st.selectbox("Noteプロジェクト", ["すべて", "3", "2", "1"], key="f_note")
+        with col2:
+            filter_career = st.selectbox("キャリア・仕事", ["すべて", "3", "2", "1"], key="f_career")
+        with col3:
+            filter_idea = st.selectbox("発信アイデア", ["すべて", "3", "2", "1"], key="f_idea")
+
+        search_q = st.text_input("🔍 タイトル・タグ検索", placeholder="キーワードを入力")
+
+        filtered = records
+        if filter_note != "すべて":
+            filtered = [r for r in filtered if r.get("scores", {}).get("note_project") >= int(filter_note)]
+        if filter_career != "すべて":
+            filtered = [r for r in filtered if r.get("scores", {}).get("career") >= int(filter_career)]
+        if filter_idea != "すべて":
+            filtered = [r for r in filtered if r.get("scores", {}).get("idea") >= int(filter_idea)]
+        if search_q:
+            q = search_q.lower()
+            filtered = [
+                r for r in filtered
+                if q in r.get("title", "").lower()
+                or any(q in t.lower() for t in r.get("tags", []))
+                or q in r.get("memo", "").lower()
+            ]
+
+        st.caption(f"{len(filtered)} 件 / 全 {len(records)} 件")
+
+        SCORE_LABEL = {3: "◎ 直接使える", 2: "○ 使える", 1: "△ 参考程度"}
+
+        for r in filtered:
+            scores = r.get("scores", {})
+            tags = r.get("tags", [])
+            with st.expander(f"**{r.get('title', '(タイトルなし)')}**　{' '.join(f'#{t}' for t in tags)}"):
+                if r.get("url"):
+                    st.caption(f"🔗 [{r['url']}]({r['url']})")
+                c1, c2, c3 = st.columns(3)
+                with c1:
+                    st.metric("Noteプロジェクト", SCORE_LABEL.get(scores.get("note_project", 0), "-"))
+                with c2:
+                    st.metric("キャリア・仕事", SCORE_LABEL.get(scores.get("career", 0), "-"))
+                with c3:
+                    st.metric("発信アイデア", SCORE_LABEL.get(scores.get("idea", 0), "-"))
+                if r.get("memo"):
+                    st.markdown(f"> {r['memo']}")
+                st.caption(f"分析日: {r.get('analyzed_at', '')}　カテゴリ: {r.get('category', '')}")
 
 with tab_add:
     st.markdown("### Gemini Gemの出力を貼り付け")

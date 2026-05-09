@@ -1,0 +1,502 @@
+[
+  {
+    "notion_id": "2f16c0e5-cb0f-8008-acc6-e49c5d030105",
+    "title": "note添削用のGemを作りました",
+    "url": "https://note.com/gimupop/n/nd14f5467170d?sub_rt=share_pw",
+    "category": "Note",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 3, "career": 2, "idea": 2},
+    "tags": ["note", "Gemini", "添削", "AI執筆"],
+    "memo": "Geminiで記事添削するGemの構築事例。note執筆ワークフロー改善に直接役立つ"
+  },
+  {
+    "notion_id": "2f16c0e5-cb0f-800c-a7f4-cc73af02f67c",
+    "title": "\u201c\u5刺さる\u201dは3レイヤーで設計できる。Xアルゴリズムに屈しない人心レバーの握り方",
+    "url": "https://note.com/onebookof_mag/n/nb2cbe21bf3b3",
+    "category": "SNS",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 3, "career": 2, "idea": 3},
+    "tags": ["SNS戦略", "心理設計", "Xアルゴリズム", "発信設計"],
+    "memo": "人の心に刺さる発信を3層構造で設計する手法。INFJ発信者の記事構成・タイトル設計に直接応用できる"
+  },
+  {
+    "notion_id": "2f16c0e5-cb0f-801c-91bd-cff7d4a09177",
+    "title": "科学ではあなたは主人公になれないから",
+    "url": "https://note.com/otola_ryntaro/n/n36b32ca9c606?sub_rt=share_pw",
+    "category": "心理学・脳科学",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 3, "career": 1, "idea": 3},
+    "tags": ["内省", "自己理解", "科学と感情", "INFJ"],
+    "memo": "科学的エビデンスと個人の主観・感情の関係性。INFJが共感する「自分を証明できない」感覚の記事ネタ"
+  },
+  {
+    "notion_id": "2f16c0e5-cb0f-801e-adf5-fb54ba474e88",
+    "title": "AI時代もSEOを頑張っている話",
+    "url": "https://speakerdeck.com/shirahama_x/the-story-of-continuing-seo-efforts-in-the-ai-era",
+    "category": "SEO",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 2, "career": 3, "idea": 2},
+    "tags": ["SEO", "AI時代", "コンテンツ戦略"],
+    "memo": "AI検索が普及してもSEOが有効な理由と戦略。note記事の検索流入設計に活かせる"
+  },
+  {
+    "notion_id": "2f16c0e5-cb0f-802b-b8e9-ce1119d53142",
+    "title": "ユーザーの脳や認知の仕組みを活用したUIデザインテクニック38 -認知心理学逆引き辞典-",
+    "url": "https://note.com/sompo_sprint/n/n37955a445f37",
+    "category": "心理学・脳科学",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 2, "career": 3, "idea": 2},
+    "tags": ["認知心理学", "UX", "読者行動", "設計"],
+    "memo": "認知心理学をUIに応用した38のテクニック。記事レイアウト・見出し設計の裏付けに使える"
+  },
+  {
+    "notion_id": "2f16c0e5-cb0f-802c-836b-fbc62087d7e2",
+    "title": "Xのアルゴリズム",
+    "url": "https://github.com/twitter/the-algorithm",
+    "category": "SNS",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 2, "career": 3, "idea": 2},
+    "tags": ["Xアルゴリズム", "SNS", "ソースコード"],
+    "memo": "XのアルゴリズムのGitHubリポジトリ。エンゲージメントの仕組みを理解する一次資料"
+  },
+  {
+    "notion_id": "2f16c0e5-cb0f-8049-a508-c42c4e872461",
+    "title": "It's Time for Marketers to Move Beyond the Linear Funnel",
+    "url": "https://www.bcg.com/publications/2025/move-beyond-the-linear-funnel",
+    "category": "マーケティング",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 1, "career": 3, "idea": 2},
+    "tags": ["マーケティング", "ファネル", "BCG", "戦略"],
+    "memo": "BCGによる「線形ファネルを超えるべき時」論考。マーケティング戦略の転換点を示す重要資料"
+  },
+  {
+    "notion_id": "2f16c0e5-cb0f-8055-8d88-e04261da40a4",
+    "title": "【2026年完全版】Gemini 3とNano Banana Proが引き起こす「マーケティングの終焉」と「エージェント経済」の誕生",
+    "url": "https://digima-labo.com/19783/",
+    "category": "AI",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 2, "career": 3, "idea": 3},
+    "tags": ["AI", "マーケティング変革", "エージェント経済", "2026"],
+    "memo": "AI進化でマーケティングが変質する議論。発信者としての生き残り戦略の記事に転用できる"
+  },
+  {
+    "notion_id": "2f16c0e5-cb0f-807f-bd0b-d1ac4be30888",
+    "title": "これから発信してファンを増やしたいぞ！という人のための教科書",
+    "url": "https://kensuu.com/n/n5fb190adc878",
+    "category": "Note",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 3, "career": 1, "idea": 2},
+    "tags": ["note", "発信", "ファン獲得", "教科書"],
+    "memo": "けんすうによる発信してファンを増やすための教科書記事。note運用の基礎戦略として参照価値高い"
+  },
+  {
+    "notion_id": "2f16c0e5-cb0f-8094-af98-efaa72acd637",
+    "title": "noteの推しアルゴリズムについて",
+    "url": "https://note.com/fladdict/n/n5b78bb223b35",
+    "category": "Note",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 3, "career": 1, "idea": 2},
+    "tags": ["noteアルゴリズム", "note運用", "露出設計"],
+    "memo": "noteの編集部が推す仕組み・アルゴリズムの解説。投稿タイミング・タイトル設計の戦略立案に必須"
+  },
+  {
+    "notion_id": "2f16c0e5-cb0f-80ac-9d46-e73260fad51c",
+    "title": "AIモード参照は「メインクエリ1位獲得」よりも「10位以内のクエリ獲得数」が重要 - 213記事の定量分析から見えた参照記事特性",
+    "url": "https://www.lany.co.jp/lany-llmo-lab/ai-mode-reference-rank-top10",
+    "category": "SEO",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 2, "career": 3, "idea": 2},
+    "tags": ["SEO", "AI検索", "LLMO", "定量分析"],
+    "memo": "213記事の分析からAI検索での参照はロングテールクエリ数が重要と判明。note記事のSEO戦略に直結"
+  },
+  {
+    "notion_id": "2f16c0e5-cb0f-80dd-92df-df37b830926d",
+    "title": "【売れる広告の解剖図】成果を出す広告テキスト「23の表現要素」とAI生成プロンプト",
+    "url": "https://note.com/sompo_sprint/n/n37955a445f37",
+    "category": "マーケティング",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 2, "career": 3, "idea": 2},
+    "tags": ["コピーライティング", "広告", "表現要素", "マーケティング"],
+    "memo": "売れる広告テキストの23の表現要素とAIプロンプト。記事タイトル・見出し設計のコピー技術に転用できる"
+  },
+  {
+    "notion_id": "2f16c0e5-cb0f-80df-a08d-d1405657c462",
+    "title": "信号機や自転車の画像を選ぶロボットチェックの儲けの裏側",
+    "url": "https://note.com/ote_walk/n/nce0ed451573e",
+    "category": "ビジネス",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 2, "career": 1, "idea": 3},
+    "tags": ["reCAPTCHA", "搾取構造", "ビジネスの裏側", "驚き"],
+    "memo": "reCAPTCHAが企業の機械学習データ収集に使われる仕組みの解説。「知らずに搾取される」INFJ共感記事の素材"
+  },
+  {
+    "notion_id": "2f16c0e5-cb0f-80e9-aaf7-f9b5d00840c3",
+    "title": "2026年、noteで月100万円狙うための50ステップ",
+    "url": "https://x.com/xxx_note_xx/status/2013456231818764373?s=46&t=xZRzBY0fvJXiiJKDbqQgzw",
+    "category": "Note",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 3, "career": 1, "idea": 2},
+    "tags": ["note収益化", "マネタイズ", "50ステップ"],
+    "memo": "note月100万円達成のための50ステップ。収益化戦略の全体像を把握するロードマップとして活用"
+  },
+  {
+    "notion_id": "2f16c0e5-cb0f-80ea-94ec-cc9412559413",
+    "title": "大阪・関西万博のテレビの効果（319.5億円）を計算したデータを配布します。",
+    "url": "https://note.com/ogataka/n/n480d7da24a51",
+    "category": "マーケティング",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 1, "career": 2, "idea": 1},
+    "tags": ["メディア効果", "万博", "広告費", "データ"],
+    "memo": "テレビCMの広告効果を定量計算した事例データ。メディアミックス効果測定の参考資料"
+  },
+  {
+    "notion_id": "2f96c0e5-cb0f-80e6-84d4-e9ce9c46e55a",
+    "title": "toCプロダクトにおけるAI機能開発のしくじりと学び",
+    "url": "https://speakerdeck.com/rince/ai-product-failures-and-learnings",
+    "category": "マーケティング",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 1, "career": 3, "idea": 2},
+    "tags": ["AI開発", "プロダクト", "失敗事例", "学び"],
+    "memo": "toC向けAI機能開発で犯しがちな失敗と教訓。AI活用プロダクト開発の実務参考資料"
+  },
+  {
+    "notion_id": "3166c0e5-cb0f-800b-8afd-c859d1957f4d",
+    "title": "読書体験をClaudeでもっと先に。本で学んだ知見を思考へ落とす方法",
+    "url": "https://x.com/qumaiu/status/2020678314428617123?s=46&t=xZRzBY0fvJXiiJKDbqQgzw",
+    "category": "AI",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 3, "career": 2, "idea": 3},
+    "tags": ["Claude", "読書", "思考深化", "知識活用"],
+    "memo": "Claudeで読書の知見を思考に落とし込む実践的手法。INFJの「深く考えたい」欲求に直結する記事ネタ"
+  },
+  {
+    "notion_id": "3166c0e5-cb0f-8019-a842-d9b865602b48",
+    "title": "思考の深度の差はなぜ生まれるのか",
+    "url": "https://x.com/gimupop/status/2020800402514735589?s=46&t=xZRzBY0fvJXiiJKDbqQgzw",
+    "category": "AI",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 3, "career": 2, "idea": 3},
+    "tags": ["思考の深さ", "内省", "INFJ", "メタ認知"],
+    "memo": "思考の深度に差が生まれる構造的理由の考察。INFJの「考えすぎ」感覚を肯定する記事の裏付け"
+  },
+  {
+    "notion_id": "3166c0e5-cb0f-801c-a8bb-cb785aa72f93",
+    "title": "結局、Claudeって何ができるんだよ！全機能完全紹介【2026年最新版】",
+    "url": "https://x.com/adhdhsp249834/status/2026937383913169255?s=46&t=xZRzBY0fvJXiiJKDbqQgzw",
+    "category": "AI",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 2, "career": 3, "idea": 2},
+    "tags": ["Claude", "AI活用", "機能紹介"],
+    "memo": "Claude全機能の2026年最新版まとめ。Claude Codeを使った発信者としての自己紹介記事にも活用可"
+  },
+  {
+    "notion_id": "3166c0e5-cb0f-801e-9b77-dc68264997a7",
+    "title": "海外版noteで月20万稼ぐ人の戦略をnoteに当てはめたら全部使えた",
+    "url": "https://x.com/Xxx_note_xx/status/2023937518497103911",
+    "category": "Note",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 3, "career": 1, "idea": 3},
+    "tags": ["note", "海外戦略", "収益化", "コンテンツビジネス"],
+    "memo": "海外note（Medium等）で稼ぐ人の戦略を日本noteに転用した実践例。収益化戦略の記事素材として活用できる"
+  },
+  {
+    "notion_id": "3166c0e5-cb0f-8050-91c7-c510dfd87771",
+    "title": "「やりたいことがない」と嘆くISFPとINFPへ。君たちは「夢」を探すのではなく、「不快」から逃げればいい",
+    "url": "https://x.com/analyze_mbti/status/2023176129365053672?s=46&t=xZRzBY0fvJXiiJKDbqQgzw",
+    "category": "ライティング分析",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 3, "career": 1, "idea": 3},
+    "tags": ["MBTI", "やりたいこと", "INFJ", "ライティング分析"],
+    "memo": "ISFPとINFP向け「やりたいこと不要論」の分析ログ。INFJ版記事への転用ネタとして活用可"
+  },
+  {
+    "notion_id": "3166c0e5-cb0f-806d-90bc-e6368750ac45",
+    "title": "35歳で知る「取り返せない時間」の正体",
+    "url": "https://x.com/Via00Via/status/2021325191360794829",
+    "category": "ライティング分析",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 3, "career": 1, "idea": 3},
+    "tags": ["バズ分析", "感情訴求", "時間", "後悔"],
+    "memo": "バズった「取り返せない時間」投稿の分析ログ。感情を揺さぶるタイトル・フックの参考事例"
+  },
+  {
+    "notion_id": "3166c0e5-cb0f-80b9-a402-f8bc63db6361",
+    "title": "内圧をカンカンに高める 【仕事の姿勢】",
+    "url": "https://www.youtube.com/watch?v=X6FcraeKrSM&t=31s",
+    "category": "ビジネス",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 2, "career": 2, "idea": 2},
+    "tags": ["内発的動機", "仕事の姿勢", "モチベーション"],
+    "memo": "内圧（内側からのモチベーション）を高める考え方。INFJの「外圧に反応しにくい」特性と接続できる"
+  },
+  {
+    "notion_id": "3166c0e5-cb0f-80b9-ac32-d9bff18bf1d4",
+    "title": "フォロー率を劇的に高める「認知負荷」のコントロール術",
+    "url": "https://x.com/shinkaron/status/2023694080790983096?s=46&t=xZRzBY0fvJXiiJKDbqQgzw",
+    "category": "SNS",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 3, "career": 2, "idea": 3},
+    "tags": ["認知負荷", "SNS", "フォロー率", "読みやすさ"],
+    "memo": "認知負荷を下げてフォロー率を高める手法。記事・投稿の構成設計に即活用できる実践的フレームワーク"
+  },
+  {
+    "notion_id": "3166c0e5-cb0f-80d0-b979-c349c0d7b32b",
+    "title": "0から分かる Claude Code 完全ガイド",
+    "url": "https://zenn.dev/lv/books/f611cdfe8a6e1a",
+    "category": "AI",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 2, "career": 3, "idea": 1},
+    "tags": ["Claude Code", "AIツール", "ガイド"],
+    "memo": "Claude Codeの使い方完全ガイド。ツール活用の自己研鑽と発信者としての基礎知識として参照"
+  },
+  {
+    "notion_id": "3166c0e5-cb0f-80d2-bb5f-fcbf75b5c736",
+    "title": "【小学生でもわかる】Claude Code 超初心者向け始め方ガイド",
+    "url": "https://x.com/mercarioji/status/2021833566506954800?s=20",
+    "category": "AI",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 2, "career": 2, "idea": 2},
+    "tags": ["Claude Code", "初心者向け", "AI入門"],
+    "memo": "超初心者向けClaude Code始め方ガイド。AI活用の発信文脈で「始め方」記事の参考に"
+  },
+  {
+    "notion_id": "3166c0e5-cb0f-80d7-9972-dc46beb50599",
+    "title": "【スタンフォード式】意志力ゼロで集中モードに入る裏技",
+    "url": "https://x.com/tanpakun000/status/2023339119523578319?s=46&t=xZRzBY0fvJXiiJKDbqQgzw",
+    "category": "心理学・脳科学",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 3, "career": 2, "idea": 3},
+    "tags": ["意志力", "集中力", "スタンフォード", "行動設計"],
+    "memo": "意志力に頼らず集中モードに入るスタンフォード式手法。INFJの「気力が続かない」悩みを解決する記事素材"
+  },
+  {
+    "notion_id": "3166c0e5-cb0f-80e2-8c77-c868bcd2242e",
+    "title": "Claude Codeに「X検索」を足すと、リサーチが捗りすぎて止まらなくなる",
+    "url": "https://x.com/HayattiQ/status/2021057206939156505?s=20",
+    "category": "AI",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 3, "career": 2, "idea": 2},
+    "tags": ["Claude Code", "X検索", "リサーチ自動化"],
+    "memo": "Claude CodeにX検索機能を統合してリサーチを効率化する手法。ナレッジ収集フロー改善に直接活用できる"
+  },
+  {
+    "notion_id": "3176c0e5-cb0f-80c3-9100-ce292cf30579",
+    "title": "マーケティングファネルが機能しにくくなってきている",
+    "url": "https://x.com/Biz_Producer/status/2026540880061202854",
+    "category": "Note",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 2, "career": 3, "idea": 2},
+    "tags": ["マーケティング", "ファネル崩壊", "発信戦略"],
+    "memo": "ファネル型マーケティングが機能しにくくなっている現状の考察。コンテンツ発信の在り方を問い直す素材"
+  },
+  {
+    "notion_id": "3226c0e5-cb0f-800d-bbe4-dd81f1739e0e",
+    "title": "【実例保存版】マーケ支援会社がClaudeでやっている仕事、全部書く──24の業務リスト",
+    "url": "https://x.com/arupoki/status/2029792962918633573",
+    "category": "AI",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 2, "career": 3, "idea": 2},
+    "tags": ["Claude", "マーケ業務", "AI活用", "実例"],
+    "memo": "マーケ支援会社がClaudeで実際にやっている24業務の実例集。AI活用の実務参考とコンテンツ素材の両方に使える"
+  },
+  {
+    "notion_id": "3226c0e5-cb0f-8048-b869-cf045adae640",
+    "title": "Claude Coworkの始め方ガイド【動画解説付き】",
+    "url": "https://x.com/hata_ai_master/status/2030486584999682174?s=46&t=xZRzBY0fvJXiiJKDbqQgzw",
+    "category": "AI",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 2, "career": 2, "idea": 1},
+    "tags": ["Claude Cowork", "並行作業", "AI活用"],
+    "memo": "複数Claudeを並行稼働させるCoworkの始め方ガイド。大量コンテンツ制作の効率化に参考"
+  },
+  {
+    "notion_id": "3226c0e5-cb0f-806d-b0e0-f2bdcde6eb6d",
+    "title": "「リモートで腐るE型」と「オフィスで死ぬI型」生産性を最大化する16タイプ別の最適な働き方とは？",
+    "url": "https://x.com/bizanalyze_mbti/status/2028973576909668617?s=46&t=xZRzBY0fvJXiiJKDbqQgzw",
+    "category": "心理学・脳科学",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 3, "career": 2, "idea": 3},
+    "tags": ["MBTI", "I型", "働き方", "リモートワーク"],
+    "memo": "MBTI別の最適な働き方分析。INFJ（I型）読者の「自分の働き方の謎が解けた」体験を設計できる記事素材"
+  },
+  {
+    "notion_id": "3226c0e5-cb0f-80b6-bd2b-fbb1c3f081f3",
+    "title": "Googleが重視する「頭の良さ」より大事な能力",
+    "url": "https://x.com/hajimen_dokusho/status/2030112079462682917?s=46&t=xZRzBY0fvJXiiJKDbqQgzw",
+    "category": "心理学・脳科学",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 3, "career": 2, "idea": 3},
+    "tags": ["Googleの採用基準", "EQ", "非認知能力", "逆説"],
+    "memo": "Googleが採用で重視する「頭の良さより大事な能力」の考察。INFJの強みを肯定する記事の裏付けに使える"
+  },
+  {
+    "notion_id": "3226c0e5-cb0f-80be-b6f3-f0ddfa3394f2",
+    "title": "上位1%のClaude Skills構築方法",
+    "url": "https://x.com/OneBiz_Levela/status/2028666852097040738?s=46&t=xZRzBY0fvJXiiJKDbqQgzw",
+    "category": "AI",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 3, "career": 2, "idea": 2},
+    "tags": ["Claude Skills", "プロンプト設計", "AI活用上位"],
+    "memo": "上位1%のClaude Skills設計手法。現在のSkillファイルの質向上に直接活用できる"
+  },
+  {
+    "notion_id": "3236c0e5-cb0f-8037-a201-d9f30b2bab35",
+    "title": "【神ツール完成】Claude Codeで有料note記事を365日分作るツールができました。",
+    "url": "https://x.com/oku_hashi/status/2031621424499274025?s=46&t=xZRzBY0fvJXiiJKDbqQgzw",
+    "category": "AI",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 3, "career": 1, "idea": 3},
+    "tags": ["Claude Code", "有料note", "コンテンツ量産", "自動化"],
+    "memo": "Claude Codeで有料note記事を365日分自動生成するツールの紹介。有料記事プロンプトチェーン設計の参考"
+  },
+  {
+    "notion_id": "3236c0e5-cb0f-8053-9014-f45790202f51",
+    "title": "これだけブクマしておけばOK！全61,404文字のClaude関連10記事ナビゲーション",
+    "url": null,
+    "category": "AI",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 2, "career": 2, "idea": 1},
+    "tags": ["Claude", "リソースまとめ", "AI活用"],
+    "memo": "Claude関連10記事の総合ナビゲーション（61,404文字）。Claude活用の学習リソースとして参照"
+  },
+  {
+    "notion_id": "3236c0e5-cb0f-8067-b36a-eb394741041e",
+    "title": "『睡眠と栄養の深い関係』（保存版）　−"回復の質"を決める見えない基盤−",
+    "url": "https://note.com/kin_tsuzuike/n/nc283e38873ad",
+    "category": "健康",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 2, "career": 1, "idea": 2},
+    "tags": ["睡眠", "栄養", "回復", "繊細な体"],
+    "memo": "睡眠と栄養の関係を詳説した保存版記事。INFJの「回復に時間がかかる」感覚を科学で裏付ける素材"
+  },
+  {
+    "notion_id": "3236c0e5-cb0f-8072-8706-f459c5f9affa",
+    "title": "「2025年 日本の広告費 インターネット広告媒体費 詳細分析」",
+    "url": "https://www.dentsudigital.co.jp/news/release/services/2026-0305-000300",
+    "category": "マーケティング",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 1, "career": 3, "idea": 1},
+    "tags": ["広告費", "インターネット広告", "市場データ"],
+    "memo": "2025年日本の広告費データ（電通デジタル調査）。マーケティング市場動向の実務参考資料"
+  },
+  {
+    "notion_id": "3236c0e5-cb0f-8074-a0b7-e0e54609e854",
+    "title": "センスを磨く方法",
+    "url": "https://x.com/kookaking/status/2030963482594873556?s=46&t=xZRzBY0fvJXiiJKDbqQgzw",
+    "category": "デザイン",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 2, "career": 2, "idea": 3},
+    "tags": ["センス", "デザイン思考", "審美眼", "才能"],
+    "memo": "センスを後天的に磨く方法論。「生まれつき才能がある人」コンプレックスを持つINFJ読者への記事素材"
+  },
+  {
+    "notion_id": "3236c0e5-cb0f-8075-9325-d030ba583ea3",
+    "title": "南場智子「ますます"速さ"が命題に」DeNA AI Day2026全文書き起こし",
+    "url": "https://type.jp/et/feature/30605/",
+    "category": "マネジメント",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 1, "career": 3, "idea": 2},
+    "tags": ["マネジメント", "AI経営", "速度", "DeNA"],
+    "memo": "南場智子のAI時代の経営論。「速さが命題」の時代にINFJが生き残る逆説記事の素材"
+  },
+  {
+    "notion_id": "3236c0e5-cb0f-8094-8f6f-ec27f74c1dc7",
+    "title": "「残業＝美徳」はもう古い？世界トップ5%が実践する『生産性を爆上げする休み方』",
+    "url": "https://x.com/hima_fires/status/2031314732137984327?s=46&t=xZRzBY0fvJXiiJKDbqQgzw",
+    "category": "マネジメント",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 3, "career": 2, "idea": 3},
+    "tags": ["休み方", "生産性", "マネジメント", "繊細さ"],
+    "memo": "世界トップ5%が実践する休み方と生産性の関係。INFJの「休むことへの罪悪感」を解消する記事素材"
+  },
+  {
+    "notion_id": "3236c0e5-cb0f-809b-a591-df9f0d4666c2",
+    "title": "「やりたい事がない」と悩む若手社員の正体。MBTI別・モチベーションの源泉を徹底解剖します。",
+    "url": "https://x.com/analyze_mbti/status/2031886437424251202?s=46&t=xZRzBY0fvJXiiJKDbqQgzw",
+    "category": "心理学・脳科学",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 3, "career": 2, "idea": 3},
+    "tags": ["MBTI", "モチベーション", "やりたいこと", "INFJ"],
+    "memo": "MBTI別のモチベーション源泉分析。INFJの「やりたいことが見つからない」悩みへの記事を書く際の根拠資料"
+  },
+  {
+    "notion_id": "3236c0e5-cb0f-80b4-a150-c51e620fdb79",
+    "title": "Improve your AI code output with AGENTS.md (+ my best tips)",
+    "url": "https://www.builder.io/blog/agents-md",
+    "category": "AI",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 2, "career": 3, "idea": 1},
+    "tags": ["AGENTS.md", "AI開発", "コード品質", "プロンプト設計"],
+    "memo": "AGENTS.mdを使ってAIのコード出力品質を上げるベストプラクティス集。Claude Code設定改善に直接活用"
+  },
+  {
+    "notion_id": "3236c0e5-cb0f-80ba-8246-f5e45d84dfab",
+    "title": "なぜ現代の男たちは「弱く」なったのか？",
+    "url": "https://x.com/shido_renai/status/2031135276316373164?s=46&t=xZRzBY0fvJXiiJKDbqQgzw",
+    "category": "心理学・脳科学",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 3, "career": 1, "idea": 3},
+    "tags": ["弱さ", "男性性", "心理学", "現代社会"],
+    "memo": "現代男性の「弱さ」の構造を心理学的に考察。INFJの「弱さを隠す必要はない」というテーマの記事素材"
+  },
+  {
+    "notion_id": "3236c0e5-cb0f-80e3-b38c-fb6e04447b6c",
+    "title": "「本当に余裕がある人の特徴」を言語化してみた",
+    "url": "https://x.com/hajimen_dokusho/status/2031565896112812395?s=46&t=xZRzBY0fvJXiiJKDbqQgzw",
+    "category": "心理学・脳科学",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 3, "career": 2, "idea": 3},
+    "tags": ["余裕", "心理的安全", "自己管理", "特徴"],
+    "memo": "「本当に余裕がある人」の特徴を言語化した考察。INFJが「焦ってしまう」自分を客観視する記事の素材"
+  },
+  {
+    "notion_id": "3236c0e5-cb0f-80f7-aaf1-e97c0e42ecaa",
+    "title": "スタートアップのマーケターがClaude Codeを使い倒したら、事業が4ヶ月で300%成長した話",
+    "url": "https://x.com/tsukky739/status/2032034809539948961",
+    "category": "AI",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 2, "career": 3, "idea": 3},
+    "tags": ["Claude Code", "スタートアップ", "事業成長", "マーケ"],
+    "memo": "4ヶ月で300%成長したClaude Code活用事例。AI活用の具体的成果を示す実例として記事・提案に使える"
+  },
+  {
+    "notion_id": "3236c0e5-cb0f-80fa-a88c-f9d6dabff7d5",
+    "title": "Claude code×note販売で初心者でも月15万円稼ぐ方法まとめ",
+    "url": "https://x.com/kkk_cun/status/2030495040183906366?s=46&t=xZRzBY0fvJXiiJKDbqQgzw",
+    "category": "AI",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 3, "career": 1, "idea": 3},
+    "tags": ["Claude Code", "note収益化", "月15万", "初心者"],
+    "memo": "Claude Codeを使ったnote販売で月15万稼ぐ手法まとめ。有料記事・マネタイズ戦略の参考"
+  },
+  {
+    "notion_id": "3386c0e5-cb0f-800c-8f79-fde933be8b00",
+    "title": "𝕏アカウント設計の完全攻略。これ読まない人、ぶっちゃけセンスない。",
+    "url": "https://x.com/oka_shigodeki/status/2039266157270818848",
+    "category": "SNS",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 2, "career": 2, "idea": 2},
+    "tags": ["Xアカウント設計", "SNS戦略", "プロフィール"],
+    "memo": "Xアカウント設計の完全攻略ガイド。プロフィール・投稿戦略を本格設計する際の参考"
+  },
+  {
+    "notion_id": "3386c0e5-cb0f-8017-bc1b-c8684e7ad8be",
+    "title": "「マーケターって、みんな言うことバラバラで分かりにくい」→答え：宗派が違うから",
+    "url": "https://x.com/kojiteshigawara/status/2036198016760291817?s=46&t=xZRzBY0fvJXiiJKDbqQgzw",
+    "category": "マーケティング",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 2, "career": 3, "idea": 3},
+    "tags": ["マーケティング", "宗派", "流派整理", "体系化"],
+    "memo": "マーケターの言うことがバラバラな理由は「宗派が違うから」という整理。INFJの「なぜ矛盾するの」疑問を解消する記事素材"
+  },
+  {
+    "notion_id": "3386c0e5-cb0f-801b-b9b6-dbc2d15d3664",
+    "title": "先延ばしの科学",
+    "url": "https://x.com/hajimen_dokusho/status/2038904136729829754?s=46&t=xZRzBY0fvJXiiJKDbqQgzw",
+    "category": "心理学・脳科学",
+    "analyzed_at": "2026-05-09",
+    "scores": {"note_project": 3, "career": 2, "idea": 3},
+    "tags": ["先延ばし", "完璧主義", "行動科学", "INFJ"],
+    "memo": "先延ばしのメカニズムを科学的に解説。INFJの「やらなきゃと思うほど動けない」悩みへの記事を書く際の根拠資料"
+  }
+]
