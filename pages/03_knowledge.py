@@ -64,7 +64,7 @@ with tab_input:
         def score_badge(score):
             label = SCORE_LABEL.get(score, "-")
             color = SCORE_COLOR.get(score, "#888")
-            return f'<span style="color:{color};font-size:0.78em;font-weight:600">{label}</span>'
+            return f'<span style="color:{color};font-size:1.5em;font-weight:600">{label}</span>'
 
         for r in filtered:
             scores = r.get("scores", {})
