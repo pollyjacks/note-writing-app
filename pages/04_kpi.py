@@ -1,7 +1,9 @@
 """KPI・進捗管理"""
+import calendar
 import json
 import sys
-from datetime import datetime
+from collections import Counter
+from datetime import date, datetime
 from pathlib import Path
 
 import streamlit as st
@@ -12,12 +14,90 @@ from lib.notion import fetch_published
 
 apply_minimal_theme()
 
+# ── カレンダー用CSS ──
+st.markdown("""
+<style>
+.cal-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 8px 0 20px;
+    font-size: 0.85rem;
+}
+.cal-table th {
+    padding: 6px 4px;
+    color: var(--text-muted);
+    font-weight: 500;
+    font-size: 0.75rem;
+    border-bottom: 1px solid var(--border);
+}
+.cal-table td {
+    height: 60px;
+    width: 14.28%;
+    border: 1px solid var(--border);
+    vertical-align: top;
+    padding: 4px 6px;
+    color: var(--text-muted);
+    background: var(--surface);
+}
+.cal-empty { background: #fafafa !important; border-color: #f0f0f0 !important; }
+.cal-today { outline: 2px solid var(--accent); outline-offset: -2px; }
+.cal-has-post {
+    background: #f0fdf4 !important;
+    color: var(--text) !important;
+    font-weight: 600;
+}
+.cal-count {
+    display: inline-block;
+    margin-top: 4px;
+    padding: 2px 8px;
+    border-radius: 12px;
+    background: var(--success);
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+</style>
+""", unsafe_allow_html=True)
+
+
+def render_calendar(year: int, month: int, pub_dates: list[str]) -> str:
+    """月次カレンダーをHTMLで生成。pub_dates: YYYY-MM-DD の投稿日リスト"""
+    prefix = f"{year:04d}-{month:02d}"
+    count = Counter(d for d in pub_dates if d.startswith(prefix))
+    cal = calendar.Calendar(firstweekday=6)
+    weekdays = ["日", "月", "火", "水", "木", "金", "土"]
+    today = date.today()
+
+    html = '<table class="cal-table"><thead><tr>'
+    for w in weekdays:
+        html += f"<th>{w}</th>"
+    html += "</tr></thead><tbody>"
+    for week in cal.monthdayscalendar(year, month):
+        html += "<tr>"
+        for day in week:
+            if day == 0:
+                html += '<td class="cal-empty"></td>'
+            else:
+                ymd = f"{prefix}-{day:02d}"
+                n = count.get(ymd, 0)
+                classes = []
+                if date(year, month, day) == today:
+                    classes.append("cal-today")
+                if n > 0:
+                    classes.append("cal-has-post")
+                cls = f' class="{" ".join(classes)}"' if classes else ""
+                dot = f'<div class="cal-count">{n}本</div>' if n > 0 else ""
+                html += f"<td{cls}>{day}{dot}</td>"
+        html += "</tr>"
+    html += "</tbody></table>"
+    return html
+
 KPI_FILE = Path(__file__).parent.parent / "outputs" / "kpi_history.json"
 
-# 目標値（マイルストーンより）
-GOAL_FOLLOWERS = 100
-GOAL_ARTICLES = 30
-GOAL_PAID = 3
+# 目標値（5月マイルストーンより）
+GOAL_FOLLOWERS = 75   # 累計フォロワー目標
+GOAL_ARTICLES = 6     # 月間投稿本数（週1〜1.5本ペース）
+GOAL_PAID = 3         # 月間有料記事本数
 
 st.title("📊 KPI・進捗管理")
 
@@ -48,6 +128,53 @@ with col4:
 
 st.progress(progress_articles)
 st.caption(f"今月の目標まであと **{max(GOAL_ARTICLES - this_month_count, 0)}本**")
+
+st.divider()
+
+# ── 月間カレンダー ──
+st.markdown("### 📅 月間投稿カレンダー")
+if "cal_year" not in st.session_state:
+    st.session_state.cal_year = datetime.now().year
+    st.session_state.cal_month = datetime.now().month
+
+c_prev, c_label, c_next, c_today = st.columns([1, 3, 1, 1])
+with c_prev:
+    if st.button("◀", use_container_width=True, key="cal_prev"):
+        m = st.session_state.cal_month - 1
+        if m < 1:
+            st.session_state.cal_year -= 1
+            m = 12
+        st.session_state.cal_month = m
+        st.rerun()
+with c_label:
+    st.markdown(
+        f"<div style='text-align:center;padding-top:8px;font-weight:600;'>{st.session_state.cal_year}年 {st.session_state.cal_month}月</div>",
+        unsafe_allow_html=True,
+    )
+with c_next:
+    if st.button("▶", use_container_width=True, key="cal_next"):
+        m = st.session_state.cal_month + 1
+        if m > 12:
+            st.session_state.cal_year += 1
+            m = 1
+        st.session_state.cal_month = m
+        st.rerun()
+with c_today:
+    if st.button("今月", use_container_width=True, key="cal_today"):
+        st.session_state.cal_year = datetime.now().year
+        st.session_state.cal_month = datetime.now().month
+        st.rerun()
+
+pub_dates = [p.get("date", "") for p in published if p.get("date")]
+st.markdown(
+    render_calendar(st.session_state.cal_year, st.session_state.cal_month, pub_dates),
+    unsafe_allow_html=True,
+)
+
+# この月の集計
+month_prefix = f"{st.session_state.cal_year:04d}-{st.session_state.cal_month:02d}"
+month_count = sum(1 for d in pub_dates if d.startswith(month_prefix))
+st.caption(f"この月の投稿：**{month_count}本**")
 
 st.divider()
 
