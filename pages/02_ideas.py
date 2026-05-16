@@ -47,7 +47,7 @@ with tab_list:
                         st.session_state.article_title = idea["title"]
                         st.session_state.transcription = f"【元アイデア】\n{idea['title']}\n{idea['memo']}\n\n（ここに音声録音の文字起こしを貼り付け）"
                         st.session_state.step = 0
-                        st.switch_page("pages/1_📝_執筆.py")
+                        st.switch_page("pages/01_write.py")
                 with c2:
                     if idea["url"]:
                         st.link_button("🔗 Notion", idea["url"])
