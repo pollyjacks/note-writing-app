@@ -139,10 +139,11 @@ def apply_minimal_theme():
         border-radius: 10px;
         padding: 16px 18px;
         margin-bottom: 12px;
-        transition: border-color 0.15s ease;
+        transition: border-color 0.15s ease, box-shadow 0.15s ease;
     }
     .card:hover {
-        border-color: var(--text-muted);
+        border-color: #c4c4c4;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.06);
     }
     .card-title {
         font-weight: 600;
@@ -155,9 +156,79 @@ def apply_minimal_theme():
         color: var(--text-muted);
     }
 
+    /* ── リマインダーカード */
+    .reminder-card {
+        border-radius: 8px;
+        padding: 11px 14px;
+        margin: 6px 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 0.88rem;
+        border: 1px solid transparent;
+        line-height: 1.45;
+    }
+    .reminder-card .r-icon { font-size: 1.05rem; flex-shrink: 0; }
+    .reminder-card .r-text { color: var(--text); }
+    .reminder-card .r-text strong { font-weight: 600; }
+    .reminder-warn {
+        background: #fffbeb;
+        border-color: #fde68a;
+    }
+    .reminder-ok {
+        background: #f0fdf4;
+        border-color: #bbf7d0;
+    }
+    .reminder-info {
+        background: var(--accent-soft);
+        border-color: #bfdbfe;
+    }
+    .reminder-celebrate {
+        background: #faf5ff;
+        border-color: #e9d5ff;
+    }
+    .reminder-neutral {
+        background: #f9fafb;
+        border-color: var(--border);
+    }
+
+    /* ── メトリクス */
+    [data-testid="stMetricValue"] {
+        font-size: 1.9rem !important;
+        font-weight: 700 !important;
+        letter-spacing: -0.03em;
+        color: var(--text) !important;
+    }
+    [data-testid="stMetricLabel"] {
+        font-size: 0.75rem !important;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--text-muted) !important;
+    }
+    [data-testid="stMetricDelta"] {
+        font-size: 0.78rem !important;
+    }
+
+    /* ── サイドバー セクション見出し */
+    section[data-testid="stSidebar"] [data-testid="stSidebarNavSeparator"],
+    section[data-testid="stSidebar"] .st-emotion-cache-title {
+        font-size: 0.68rem !important;
+        letter-spacing: 0.1em !important;
+        text-transform: uppercase !important;
+        color: var(--text-muted) !important;
+        font-weight: 600 !important;
+        margin-top: 1rem !important;
+    }
+
     /* ── プログレスバー */
     .stProgress > div > div > div {
-        background: var(--text);
+        background: linear-gradient(90deg, var(--accent) 0%, #60a5fa 100%);
+        border-radius: 99px;
+    }
+    .stProgress > div > div {
+        border-radius: 99px;
+        background: #e5e7eb;
     }
 </style>
     """, unsafe_allow_html=True)

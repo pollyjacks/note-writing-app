@@ -12,8 +12,11 @@ from lib.notion import fetch_ideas, fetch_published
 
 apply_minimal_theme()
 
+_hour = datetime.now().hour
+_greeting = "おはようございます" if _hour < 12 else ("こんにちは" if _hour < 18 else "お疲れ様です")
+
 st.title("Note執筆アシスタント")
-st.caption("INFJのための、執筆〜SNS展開までの統合ツール")
+st.caption(f"{_greeting}　—　INFJのための執筆〜SNS展開まで統合ワークスペース")
 
 st.write("")
 st.markdown("### 👋 ようこそ")
@@ -80,8 +83,26 @@ if _remaining > 0:
 else:
     _reminders.append(("🎉", f"今月の投稿目標達成！（{this_month_count}本）"))
 
+_REMINDER_STYLES = {
+    "⚠️": ("reminder-warn",  "⚠️"),
+    "✅": ("reminder-ok",    "✅"),
+    "📥": ("reminder-info",  "📥"),
+    "📝": ("reminder-info",  "📝"),
+    "📊": ("reminder-neutral","📊"),
+    "🎉": ("reminder-celebrate","🎉"),
+}
 for _icon, _msg in _reminders:
-    st.markdown(f"{_icon} &nbsp; {_msg}", unsafe_allow_html=True)
+    _cls, _ico = _REMINDER_STYLES.get(_icon, ("reminder-neutral", _icon))
+    # **text** → <strong>text</strong>
+    import re as _re
+    _html_msg = _re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', _msg)
+    st.markdown(
+        f'<div class="reminder-card {_cls}">'
+        f'<span class="r-icon">{_ico}</span>'
+        f'<span class="r-text">{_html_msg}</span>'
+        f'</div>',
+        unsafe_allow_html=True,
+    )
 
 st.divider()
 
